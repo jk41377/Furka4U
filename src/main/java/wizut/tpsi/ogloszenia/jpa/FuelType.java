@@ -4,8 +4,8 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "car_manufacturer")
-public class CarManufacturer {
+@Table(name = "fuel_type")
+public class FuelType {
     @Id
     @GeneratedValue
     @Column(name = "id")
@@ -15,7 +15,9 @@ public class CarManufacturer {
     @Column(name = "name")
     private String name;
 
-    public Integer getId() { return id; }
+    public Integer getId() {
+        return id;
+    }
 
     public void setId(Integer id) {
         this.id = id;
