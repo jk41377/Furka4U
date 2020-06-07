@@ -33,13 +33,13 @@
             <th>Rok produkcji:</th>
             <td th:text="*{year}"></td>
             <th>Przebieg:</th>
-            <td th:text="*{mileage}"></td>
+            <td th:text="*{mileage + ' km'}"></td>
         </tr>
         <tr>
             <th>Pojemność:</th>
-            <td th:text="*{engineSize + 'L'}"></td>
+            <td th:text="*{engineSize + ' L'}"></td>
             <th>Moc silnika:</th>
-            <td th:text="*{enginePower + 'kW'}"></td>
+            <td th:text="*{enginePower + ' kW'}"></td>
         </tr>
         <tr>
             <th>Rodzaj paliwa:</th>
